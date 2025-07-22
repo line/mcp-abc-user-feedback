@@ -1,0 +1,40 @@
+{
+  "name": "@line/mcp-abc-user-feedback",
+  "version": "1.0.0",
+  "description": "MCP server that integrates ABC User Feedback API to connect an AI Agent",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "module": "./dist/index.js",
+  "bin":{
+    "mcp-abc-user-feedback": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prettier": "prettier \"src/**/*.ts\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- -l",
+    "clean": "rm -rf dist/*",
+    "prebuild": "npm run format:check && npm run clean",
+    "release": "npm run build && npm publish --provenance --access public"
+  },
+  "keywords": [
+    "abc-user-feedback",
+    "bot",
+    "mcp"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "prettier": "^3.5.3",
+    "shx": "^0.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.0",
+    "axios": "^1.9.0",
+    "zod": "^3.24.3"
+  }
+}
