@@ -25,5 +25,6 @@ uploading a pull request.
 ## Contributor license agreement
 
 When you are sending a pull request and it's a non-trivial change beyond fixing typos, please make sure to sign
-[the ICLA (individual contributor license agreement)](https://cla-assistant.io/line/line-bot-mcp-server). Please
+[the ICLA (individual contributor license agreement)](https://cla-assistant.io/line/mcp-abc-user-feedback). Please
 [contact us](mailto:dl_oss_dev@linecorp.com) if you need the CCLA (corporate contributor license agreement).
+
